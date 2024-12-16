@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajudante de League of Legends</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Ajudante de League of Legends</h1>
+        <p>Seu assistente para picks, bans, runas e builds no League of Legends!</p>
+    </header>
+
+    <main>
+
+        <section id="input-section">
+
+            <h2>Configure sua Partida</h2>
+
+            <form id="match-form">
+
+                <label for="role">Sua Função:</label>
+                <div id="role-selection">
+
+                    <label>
+                        <input type="radio" name="role" value="top">
+                        <img src="icons/top.png" alt="Top Lane" title="Top">
+                    </label>
+
+                    <label>
+                        <input type="radio" name="role" value="jungle">
+                        <img src="icons/jungle.png" alt="Jungle" title="Jungle">
+                    </label>
+
+                    <label>
+                        <input type="radio" name="role" value="mid">
+                        <img src="icons/mid.png" alt="Mid Lane" title="Mid">
+                    </label>
+
+                    <label>
+                        <input type="radio" name="role" value="adc">
+                        <img src="icons/adc.png" alt="ADC" title="ADC">
+                    </label>
+
+                    <label>
+                        <input type="radio" name="role" value="support">
+                        <img src="icons/support.png" alt="Support" title="Support">
+                    </label>
+                </div>
+
+                <label for="team">Campeões Aliados:</label>
+                <div id="team-selection">
+
+                    <!-- Imagens de campeões aliados -->
+                </div>
+
+                <label for="enemy">Campeões Inimigos:</label>
+                <div id="enemy-selection">
+
+                    <!-- Imagens de campeões inimigos -->
+                </div>
+
+                <button type="submit">Gerar Sugestões</button>
+            </form>
+
+        </section>
+
+        <section id="results-section">
+
+            <h2>Sugestões para sua Partida</h2>
+
+            <div id="suggestions">
+                <!-- Sugestões serão exibidas aqui -->
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Ajudante de League of Legends. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
