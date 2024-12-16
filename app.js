@@ -170,24 +170,40 @@ const champions = [
     { name: "Zyra", img: "champions/Zyra_0.jpg"}
 ];
 
+const recommendations = {
+    Aatrox: {
+        runes: "Conquistador, Triunfo, Lenda: Tenacidade, Último Esforço",
+        build: "Goredrinker, Sterak's Gage, Black Cleaver"
+    },
+    Ahri: {
+        runes: "Eletrocutar, Gosto de Sangue, Globos Oculares, Caça Voraz",
+        build: "Luden's Tempest, Shadowflame, Rabadon's Deathcap"
+    },
+    Akali: {
+        runes: "Conquistador, Presença de Espírito, Lenda: Tenacidade, Golpe de Misericórdia",
+        build: "Hextech Rocketbelt, Zhonya's Hourglass, Void Staff"
+    },
+    // Adicione mais recomendações conforme necessário
+};
+
 function createChampionGrid(container, filterBarId) {
     const filterBar = document.getElementById(filterBarId);
     function updateGrid() {
-        const query = filterBar.value.toLowerCase();
-        container.innerHTML = "";
-        champions.filter(champion => champion.name.toLowerCase().includes(query))
-                 .forEach(champion => {
-                     const champDiv = document.createElement("div");
-                     champDiv.classList.add("champion-item");
-                     champDiv.innerHTML = `
-                         <img src="${champion.img}" alt="${champion.name}" title="${champion.name}">
-                         <p>${champion.name}</p>
-                     `;
-                     champDiv.addEventListener("click", () => {
-                         champDiv.classList.toggle("selected");
-                     });
-                     container.appendChild(champDiv);
-                 });
+    const query = filterBar.value.toLowerCase();
+    container.innerHTML = "";
+    champions.filter(champion => champion.name.toLowerCase().includes(query))
+    .forEach(champion => {
+    const champDiv = document.createElement("div");
+    champDiv.classList.add("champion-item");
+    champDiv.innerHTML = `
+    <img src="${champion.img}" alt="${champion.name}" title="${champion.name}">
+    <p>${champion.name}</p>
+     `;
+    champDiv.addEventListener("click", () => {
+    champDiv.classList.toggle("selected");
+    });
+    container.appendChild(champDiv);
+    });
     }
     filterBar.addEventListener("input", updateGrid);
     updateGrid();
