@@ -1,4 +1,4 @@
-# Ajudante-LOL
+# Ajudante-LOL ![](https://static.wikia.nocookie.net/leagueoflegends/images/c/cb/Emote_Aprovado_por_Sentinelas.png/revision/latest/scale-to-width-down/250?cb=20191005172527&path-prefix=pt-br) 
 
 Este repositório contém uma ferramenta voltada para ajudar jogadores de **League of Legends**, fornecendo informações úteis para melhorar sua experiência e desempenho no jogo.
 
@@ -25,7 +25,7 @@ Atualmente em desenvolvimento 🟡. Mais recursos serão adicionados em breve!
    
 3. Siga as instruções no código ou documentação para executar a ferramenta.
 
-## Contribuições
+## 🤝 Contribuições
 
 Contribuições são bem-vindas! Para contribuir:
 
