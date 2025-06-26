@@ -29,7 +29,7 @@ Mais recursos serão adicionados em breve!
 
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/Agbl09/Ajudante-LOL.git
+   git clone https://github.com/gabriela-agbl/Ajudante-LOL.git
 
 2. Navegue até o diretório do projeto:
    ```bash
@@ -51,6 +51,6 @@ Contribuições são bem-vindas! Para contribuir:
 <h2>📝 Licença</h2>
    Este projeto foi desenvolvido para fins educacionais e está disponível para uso e modificação conforme necessário.
 
-   Feito por [Gabriela Rodrigues](https://github.com/Agbl09)
+   Feito por [Gabriela Rodrigues](https://github.com/gabriela-agbl)
    
 </div>
